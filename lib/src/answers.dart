@@ -19,7 +19,8 @@ class Answers extends StatelessWidget {
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.purple,
               // ignore: prefer_const_constructors
-              textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica"))),
+              textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica"))
+            ),
     );
   }
 }
