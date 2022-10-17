@@ -36,8 +36,8 @@ class Hompage extends StatelessWidget {
               },
               child: Text("iniciar"),
               style: ElevatedButton.styleFrom(
+               
                   padding: EdgeInsets.fromLTRB(30, 10, 30, 10),
-                  backgroundColor: Colors.purple,
                   // ignore: prefer_const_constructors
                   textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica", fontSize: 40))),
         ),
