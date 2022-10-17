@@ -32,6 +32,14 @@ migrate_working_dir/
 .pub/
 /build/
 
+# devices flutter runner 
+ios/
+linux/
+macos/
+web/
+windows/
+android/
+
 # Symbolication related
 app.*.symbols
 
