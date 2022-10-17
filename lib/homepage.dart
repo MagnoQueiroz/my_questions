@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_questions/answers.dart';
-import 'package:my_questions/images.dart';
-import 'package:my_questions/questions.dart';
+import 'package:my_questions/src/answers.dart';
+import 'package:my_questions/src/images.dart';
+import 'package:my_questions/src/questions.dart';
 import 'package:my_questions/test.dart';
 
 // usado para controlar o estado do componente stateful, tudo oq for ser alterado e controlado deverá ficar aqui
@@ -22,8 +22,9 @@ class _HomeQuestionsState extends State<HomeQuestions> {
       "Resposta": ["Bluepen", "João Gomes", "Patrick Bateman", "Redpen"],
     },
     {
-      "Texto": "pergunta 2",
-      "Resposta": ["ei", "2", "3", "4"],
+      "Imagem": "assets/images/Rei_do_Kuduro.jpeg.jpeg",
+      "Texto": "Quem é esse dignissimo Homem?",
+      "Resposta": ["Rei Kudairo", "MC Brinquedo", "Toretto", "Renan Bolsonaro"],
     },
     {
       "Texto": "pergunta 3",
@@ -48,12 +49,13 @@ class _HomeQuestionsState extends State<HomeQuestions> {
 
     //Implementa a estrutura básica de layout visual do Material Design(Scaffold)
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 40, 39, 39),
       appBar: AppBar(
         // ignore: prefer_const_constructors
         title: Center(
           // ignore: prefer_const_constructors
           child: Text(
-            "MY Questions",
+            "MY Questions - Versão celebs",
             style: TextStyle(fontFamily: 'Helvetica'),
           ),
         ),

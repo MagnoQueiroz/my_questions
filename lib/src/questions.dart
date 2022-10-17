@@ -14,7 +14,7 @@ class Questions extends StatelessWidget {
       //ele n centralizou o texto pq msm com o center ele ainda ocupa 100%(msm tamanho do q esta sendo exposto na tela e ira aumentar de acordo com o conteudo) da tela logo ele ja estava "centralizado", para isso envolvemos ele em um container e definimos um width e uma margin 
       child: Text(
         text,
-        style: TextStyle(fontSize: 20),
+        style: TextStyle(fontSize: 20, color: Colors.white),
         textAlign: 
         TextAlign.center,
       ),
