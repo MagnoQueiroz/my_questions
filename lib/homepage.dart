@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_questions/src/answers.dart';
 import 'package:my_questions/src/images.dart';
 import 'package:my_questions/src/questions.dart';
-import 'package:my_questions/test.dart';
+import 'package:my_questions/src/thanks.dart';
 
 // usado para controlar o estado do componente stateful, tudo oq for ser alterado e controlado deverá ficar aqui
 // aparentemente de acordo com esse boco do curso oq é atualizado é só oq precisa ser alterado novamente
@@ -22,13 +22,14 @@ class _HomeQuestionsState extends State<HomeQuestions> {
       "Resposta": ["Bluepen", "João Gomes", "Patrick Bateman", "Redpen"],
     },
     {
-      "Imagem": "assets/images/Rei_do_Kuduro.jpeg.jpeg",
+      "Imagem": "assets/images/3xZojtGp_400x400.jpg",
       "Texto": "Quem é esse dignissimo Homem?",
       "Resposta": ["Rei Kudairo", "MC Brinquedo", "Toretto", "Renan Bolsonaro"],
     },
     {
-      "Texto": "pergunta 3",
-      "Resposta": ["ai", "2", "3", "4"],
+      "Imagem": "assets/images/Bill.webp",
+      "Texto": "",
+      "Resposta": ["Bill", "Flor Preta", "José", "Antonio"],
     },
   ];
 
@@ -40,7 +41,6 @@ class _HomeQuestionsState extends State<HomeQuestions> {
   @override
   Widget build(BuildContext context) {
     List<String> answers = answerSelected ? _questions[_selectQuestion].cast()["Resposta"] : [];
- 
 
     List<Widget> widgets = answers.map((text) => Answers(text, _answer)).toList();
     // for (String textAnsw in answers) {
@@ -61,13 +61,16 @@ class _HomeQuestionsState extends State<HomeQuestions> {
         ),
         backgroundColor: Color(0xFF9C27B0),
       ),
-      body: answerSelected ? Column(
-        children:[
-          Images(_questions[_selectQuestion]["Imagem"].toString()),
-          Questions(_questions[_selectQuestion]["Texto"].toString()),
-          ...widgets,
-        ],
-      ) : Test(),
+      body: answerSelected
+          ? Column(
+              children: [
+                Images(_questions[_selectQuestion]["Imagem"].toString()),
+                Questions(_questions[_selectQuestion]["Texto"].toString()),
+                ...widgets,
+                
+              ],
+            )
+          : Test(),
     );
   }
 }
