@@ -17,19 +17,19 @@ class _HomeQuestionsState extends State<Quiz> {
 
   final _questions = const [
     {
-      "Imagem": "assets/images/azul-caneta.webp",
-      "Texto": "Quem é esse famoso homem?",
-      "Resposta": ["Bluepen", "João Gomes", "Patrick Bateman", "Redpen"],
+      "Imagem": "assets/images/html.png",
+      "Texto": "O que a sigla HTML quer dizer?",
+      "Resposta": ["Hyper Text Markup Language", "Hyper Markdown Text Language ", "Hyper Texture Markup Language", "Hyper Text Module laguage"],
     },
     {
-      "Imagem": "assets/images/3xZojtGp_400x400.jpg",
-      "Texto": "Quem é esse dignissimo Homem?",
-      "Resposta": ["Rei Kudairo", "MC Brinquedo", "Toretto", "Renan Bolsonaro"],
+      "Imagem": "assets/images/flutter.png",
+      "Texto": "O flutter é?",
+      "Resposta": ["Uma Linguagem de programação", "Um framework", "Uma biblioteca", "Um paradigma de programação"],
     },
     {
-      "Imagem": "assets/images/Bill.webp",
-      "Texto": "",
-      "Resposta": ["Bill", "Flor Preta", "José", "Antonio"],
+      "Imagem": "assets/images/git.png",
+      "Texto": "O que é git?",
+      "Resposta": ["Um sistema de controle de versão", "Plataforma para Hospedar código", "Uma linguagem", "Um SDK"],
     },
   ];
 
@@ -58,7 +58,7 @@ class _HomeQuestionsState extends State<Quiz> {
 
               ],
             )
-          : Test(),
+          : Thanks(),
     );
   }
 }

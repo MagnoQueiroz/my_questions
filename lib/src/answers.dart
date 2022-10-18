@@ -17,9 +17,11 @@ class Answers extends StatelessWidget {
           child: Text(text),
           onPressed: answerSelect,
           style: ElevatedButton.styleFrom(
+            primary: Colors.purple,
+            padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
               // backgroundColor: Colors.purple,
               // ignore: prefer_const_constructors
-              textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica"))
+              textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica", fontSize: 20))
             ),
     );
   }

@@ -6,9 +6,10 @@ class Images extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
       
-      width: 2800.0,
+      margin: EdgeInsets.fromLTRB(0, 80, 0, 19),
+      
+      width: 200.0,
       child: ClipRRect(child: Image.asset(image), borderRadius: BorderRadius.all(Radius.circular(20))),
     );
   }

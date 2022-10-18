@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Test extends StatelessWidget {
+class Thanks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,16 +10,16 @@ class Test extends StatelessWidget {
           Container(
             margin: EdgeInsets.fromLTRB(0, 200, 0, 0),
             child: Center(
-              child: Text("Parabens, Você manja muito menor",
+              child: Text("Parabens seus conhecimentos estao em dia!!",
                   style: TextStyle(
-                    fontSize: 20,
-                  )),
+                    fontSize: 28, fontWeight: FontWeight.w600,
+                  ), textAlign: TextAlign.center,),
             ),
           ),
           Container(
             margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
             child: Image.asset(
-              "assets/images/dance.gif",
+              "assets/images/goku.png",
               height: 300,
               width: 300,
             ),
