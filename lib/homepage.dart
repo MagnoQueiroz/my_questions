@@ -43,7 +43,24 @@ class Homepage extends StatelessWidget {
                   // ignore: prefer_const_constructors
                   textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica", fontSize: 40))),
         ),
+
+        
       ]),
+      
+      
+      bottomNavigationBar: Stack(
+        children: [
+          Container(
+            height: 40.0,
+            width: double.infinity,
+            color: Colors.purple,
+            padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+
+            child: 
+            Text("Direitos pertencentes a SYNK.SX",style: TextStyle(color: Colors.white, fontSize: 15), textAlign: TextAlign.center,),
+          )
+        ],
+      ) ,
     );
   }
 }

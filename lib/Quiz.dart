@@ -18,16 +18,19 @@ class _HomeQuestionsState extends State<Quiz> {
   final _questions = const [
     {
       "Imagem": "assets/images/html.png",
+      "Title": 1,
       "Texto": "O que a sigla HTML quer dizer?",
       "Resposta": ["Hyper Text Markup Language", "Hyper Markdown Text Language ", "Hyper Texture Markup Language", "Hyper Text Module laguage"],
     },
     {
       "Imagem": "assets/images/flutter.png",
+      "Title": 2,
       "Texto": "O flutter é?",
       "Resposta": ["Uma Linguagem de programação", "Um framework", "Uma biblioteca", "Um paradigma de programação"],
     },
     {
       "Imagem": "assets/images/git.png",
+      "Title": 3,
       "Texto": "O que é git?",
       "Resposta": ["Um sistema de controle de versão", "Plataforma para Hospedar código", "Uma linguagem", "Um SDK"],
     },
@@ -49,6 +52,11 @@ class _HomeQuestionsState extends State<Quiz> {
 
     //Implementa a estrutura básica de layout visual do Material Design(Scaffold)
     return Scaffold(
+      
+      appBar: answerSelected ? AppBar(backgroundColor: Colors.purple ,
+      
+      title: Text(_questions[_selectQuestion]["Title"].toString())) : null,
+
       body: answerSelected
           ? Column(
               children: [

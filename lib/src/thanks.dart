@@ -8,7 +8,7 @@ class Thanks extends StatelessWidget {
       body: SingleChildScrollView(child: Column(
         children: [
           Container(
-            margin: const EdgeInsets.fromLTRB(0, 200, 0, 0),
+            margin: const EdgeInsets.fromLTRB(0, 140, 0, 0),
             child: const Center(
               child: Text(
                 "Parabéns seus conhecimentos estão em dia!!",
