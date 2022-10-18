@@ -5,8 +5,7 @@ import 'package:my_questions/homepage.dart';
 class MyQuestions extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Hompage(),
+      home: Homepage(),
     );
   }
-  
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_questions/Quiz.dart';
 
-class Hompage extends StatelessWidget {
+class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +18,7 @@ class Hompage extends StatelessWidget {
       ),
       body: Column(children: [
         Container(
-          margin: EdgeInsets.fromLTRB(0, 15, 0, 0),
+            margin: EdgeInsets.fromLTRB(0, 15, 0, 0),
             width: double.infinity,
             child: Text(
               "Bem Vindo",

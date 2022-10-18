@@ -55,7 +55,6 @@ class _HomeQuestionsState extends State<Quiz> {
                 Images(_questions[_selectQuestion]["Imagem"].toString()),
                 Questions(_questions[_selectQuestion]["Texto"].toString()),
                 ...widgets,
-
               ],
             )
           : Thanks(),
