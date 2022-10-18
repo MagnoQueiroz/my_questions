@@ -5,7 +5,7 @@ class Thanks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: SingleChildScrollView(child: Column(
         children: [
           Container(
             margin: const EdgeInsets.fromLTRB(0, 200, 0, 0),
@@ -29,6 +29,7 @@ class Thanks extends StatelessWidget {
             ),
           ),
           Container(
+            padding: EdgeInsets.fromLTRB(0,0,0,20),
             child: ElevatedButton(
                 child: Text("Voltar ao inicio"),
                 onPressed: () {
@@ -43,7 +44,7 @@ class Thanks extends StatelessWidget {
                     // ignore: prefer_const_constructors
                     textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica", fontSize: 40))),
           )
-        ],
+        ],),
       ),
     );
   }

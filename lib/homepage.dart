@@ -10,7 +10,7 @@ class Homepage extends StatelessWidget {
         title: Center(
           // ignore: prefer_const_constructors
           child: Text(
-            "MY Questions - Versão celebs",
+            "Programmer Questions",
             style: TextStyle(fontFamily: 'Helvetica'),
           ),
         ),
@@ -26,7 +26,9 @@ class Homepage extends StatelessWidget {
               textAlign: TextAlign.center,
             )),
         Container(
-          margin: EdgeInsets.all(20),
+          child: Image.asset("assets/images/8bul.png"),
+        ),
+        Container(
           child: ElevatedButton(
               onPressed: () {
                 Navigator.push(
