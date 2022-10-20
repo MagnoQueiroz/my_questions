@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Questions extends StatelessWidget {
-
+// espera receber um valor tipo texto
   final String text;
   Questions(this.text);
-
   @override
   Widget build(BuildContext context) {
     return Container(

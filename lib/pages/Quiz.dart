@@ -5,15 +5,19 @@ import 'package:my_questions/components/questions.dart';
 import 'package:my_questions/pages/thanks.dart';
 
 class _HomeQuestionsState extends State<Quiz> {
+  //perguntasSelecionadas
   var _selectQuestion = 0;
 
+//responder
   void _answer() {
     setState(() {
+
       _selectQuestion++;
     });
   }
 
-  final _questions = const [
+//perguntas
+  final List<Map<String, Object>> _questions = const [
     {
       "Imagem": "assets/images/html.png",
       "Title": 1,
@@ -40,9 +44,10 @@ class _HomeQuestionsState extends State<Quiz> {
 
   @override
   Widget build(BuildContext context) {
-    List<String> answers = answerSelected ? _questions[_selectQuestion].cast()["Resposta"] : [];
-
-    List<Widget> widgets = answers.map((text) => Answers(text, _answer)).toList();
+    //list resposta 
+    List<String> answers = answerSelected ? _questions[_selectQuestion].cast()["Resposta"] : null;
+    // o map transforma uma lista em outra lista com a msm quantidade de elementos transformando por exemplo widgets
+    // List<Widget> widgets = ;
 
     return Scaffold(
       
@@ -55,7 +60,7 @@ class _HomeQuestionsState extends State<Quiz> {
               children: [
                 Images(_questions[_selectQuestion]["Imagem"].toString()),
                 Questions(_questions[_selectQuestion]["Texto"].toString()),
-                ...widgets,
+                ...answers.map((text) => Answers(text, _answer)).toList(),
               ],
             )
           : Thanks(),

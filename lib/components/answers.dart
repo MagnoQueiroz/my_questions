@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Answers extends StatelessWidget {
   final String text;
   
-
+//quandoSelecionado
   final void Function() answerSelect;
 
   Answers(this.text, this.answerSelect);
@@ -19,8 +19,6 @@ class Answers extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             primary: Colors.purple,
             padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-              // backgroundColor: Colors.purple,
-              // ignore: prefer_const_constructors
               textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica", fontSize: 20))
             ),
     );
