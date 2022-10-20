@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_questions/homepage.dart';
+import 'package:my_questions/pages/homepage.dart';
 
 class Thanks extends StatelessWidget {
   @override

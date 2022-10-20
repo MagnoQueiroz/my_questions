@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_questions/Quiz.dart';
+import 'package:my_questions/pages/Quiz.dart';
 
 class Homepage extends StatelessWidget {
   @override

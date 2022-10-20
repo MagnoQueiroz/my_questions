@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_questions/Quiz.dart';
-import 'package:my_questions/homepage.dart';
+import 'package:my_questions/pages/Quiz.dart';
+import 'package:my_questions/pages/homepage.dart';
 
 class MyQuestions extends StatelessWidget {
   Widget build(BuildContext context) {
