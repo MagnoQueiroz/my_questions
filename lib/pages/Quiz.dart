@@ -29,12 +29,12 @@ class _HomeQuestionsState extends State<Quiz> {
     {
       "Imagem": "assets/images/html.png",
       "Title": "Questão 1",
-      "Texto": "O que a sigla HTML quer dizer?",
+      "Texto": "O que a sigla HTML5 quer dizer?",
       "Resposta": [
-        {"texto": "Hyper Text Markup Language", "pontuacao": 1},
-        {"texto": "Hyper Markdown Text Language", "pontuacao": 0},
-        {"texto": "Hyper Texture Markup Language", "pontuacao": 0},
-        {"texto": "Hyper Text Module language", "pontuacao": 0},
+        {"texto": "Hyper Text Markup Language", "pontuacao": 1,},
+        {"texto": "Hyper Markdown Text Language", "pontuacao": 0,},
+        {"texto": "Hyper Texture Markup Language", "pontuacao": 0,},
+        {"texto": "Hyper Text Module language", "pontuacao": 0,},
       ],
     },
     {
@@ -103,6 +103,29 @@ class _HomeQuestionsState extends State<Quiz> {
         {
           "texto": "Desenvolvimento de aplicações web",
           "pontuacao": 1,
+        },
+      ],
+    },
+       {
+      "Imagem": "assets/images/javascript.png",
+      "Title": "Questão 5",
+      "Texto": "O CSS3 é responsável por: ",
+      "Resposta": [
+        {
+          "texto": "Estilizar a aplicação, adicionar animações",
+          "pontuacao": 1,
+        },
+        {
+          "texto": "controlar tags",
+          "pontuacao": 0,
+        },
+        {
+          "texto": "estruturar a pagina com tags como por ex: <p></p>",
+          "pontuacao": 0,
+        },
+        {
+          "texto": "Fazer o controle de dados ",
+          "pontuacao": 0,
         },
       ],
     },

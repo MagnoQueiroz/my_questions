@@ -9,7 +9,7 @@ class Thanks extends StatelessWidget {
   String get textResult {
     if (punctuation == 1 || punctuation < 2) {
       return "acertos: $punctuation\n precisa estudar mais ";
-    } else if (punctuation < 3) {
+    } else if (punctuation < 4) {
       return "acertos: $punctuation\n Seus conhecimentos estão bons ";
     } else {
       return "acertos: $punctuation\n Parabéns seus conhecimentos estão em dia!! ";
