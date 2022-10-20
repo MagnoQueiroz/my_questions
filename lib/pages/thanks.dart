@@ -28,7 +28,7 @@ class Thanks extends StatelessWidget {
                 child: Text(
                   textResult,
                   style: TextStyle(
-                    fontSize: 28,
+                    fontSize: 25,
                     fontWeight: FontWeight.w600,
                   ),
                   textAlign: TextAlign.center,
@@ -44,7 +44,7 @@ class Thanks extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+              padding: EdgeInsets.fromLTRB(0, 15, 0, 12),
               child: ElevatedButton(
                   child: Text("Voltar ao inicio"),
                   onPressed: () {

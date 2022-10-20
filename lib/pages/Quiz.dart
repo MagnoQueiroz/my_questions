@@ -83,6 +83,29 @@ class _HomeQuestionsState extends State<Quiz> {
         },
       ],
     },
+        {
+      "Imagem": "assets/images/javascript.png",
+      "Title": "Questão 4",
+      "Texto": "O JavaScript é comumente usado em tipos de aplicações?",
+      "Resposta": [
+        {
+          "texto": "Para estruturar o designer das suas aplicações",
+          "pontuacao": 0,
+        },
+        {
+          "texto": "gerenciamento de rede",
+          "pontuacao": 0,
+        },
+        {
+          "texto": "Desenvolvimento Android",
+          "pontuacao": 0,
+        },
+        {
+          "texto": "Desenvolvimento de aplicações web",
+          "pontuacao": 1,
+        },
+      ],
+    },
   ];
 
   @override

@@ -14,10 +14,10 @@ class Answers extends StatelessWidget {
       width: double.infinity,
       margin: EdgeInsets.all(5),
       child: ElevatedButton(
-          child: Text(text),
+          child: Text(text, textAlign: TextAlign.center),
           onPressed: answerSelect,
           style: ElevatedButton.styleFrom(
-            primary: Colors.purple,
+            backgroundColor: Colors.purple,
             padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
               textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica", fontSize: 20))
             ),
