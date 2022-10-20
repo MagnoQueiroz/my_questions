@@ -31,23 +31,19 @@ class Homepage extends StatelessWidget {
         Container(
           child: ElevatedButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => Quiz()),
                 );
               },
               child: Text("iniciar"),
               style: ElevatedButton.styleFrom(
-                  primary: Colors.purple,
+                  backgroundColor: Colors.purple,
                   padding: EdgeInsets.fromLTRB(30, 10, 30, 10),
                   // ignore: prefer_const_constructors
                   textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica", fontSize: 40))),
         ),
-
-        
       ]),
-      
-      
       bottomNavigationBar: Stack(
         children: [
           Container(
@@ -55,12 +51,14 @@ class Homepage extends StatelessWidget {
             width: double.infinity,
             color: Colors.purple,
             padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-
-            child: 
-            Text("Direitos pertencentes a SYNK.SX",style: TextStyle(color: Colors.white, fontSize: 15), textAlign: TextAlign.center,),
+            child: Text(
+              "Direitos pertencentes a SYNK.SX",
+              style: TextStyle(color: Colors.white, fontSize: 15),
+              textAlign: TextAlign.center,
+            ),
           )
         ],
-      ) ,
+      ),
     );
   }
 }

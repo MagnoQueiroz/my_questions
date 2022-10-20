@@ -31,7 +31,7 @@ class _HomeQuestionsState extends State<Quiz> {
       "Title": "Questão 1",
       "Texto": "O que a sigla HTML quer dizer?",
       "Resposta": [
-        {"texto": "Hyper Text Markup Language", "pontuacao": 10},
+        {"texto": "Hyper Text Markup Language", "pontuacao": 1},
         {"texto": "Hyper Markdown Text Language", "pontuacao": 0},
         {"texto": "Hyper Texture Markup Language", "pontuacao": 0},
         {"texto": "Hyper Text Module language", "pontuacao": 0},
@@ -48,7 +48,7 @@ class _HomeQuestionsState extends State<Quiz> {
         },
         {
           "texto": "Um framework",
-          "pontuacao": 10,
+          "pontuacao": 1,
         },
         {
           "texto": "Uma biblioteca",
@@ -75,7 +75,7 @@ class _HomeQuestionsState extends State<Quiz> {
         },
         {
           "texto": "Um sistema de controle de versão",
-          "pontuacao": 10,
+          "pontuacao": 1,
         },
         {
           "texto": "Um SDK",
@@ -97,7 +97,7 @@ class _HomeQuestionsState extends State<Quiz> {
               selectQuestion: _selectQuestion,
               quandoAnswer: _answer,
             )
-          : Thanks(),
+          : Thanks(_pontuacaoTotal),
     );
   }
 }
