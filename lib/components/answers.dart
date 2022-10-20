@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Answers extends StatelessWidget {
   final String text;
-  
+
 //quandoSelecionado
   final void Function() answerSelect;
 
@@ -16,11 +16,7 @@ class Answers extends StatelessWidget {
       child: ElevatedButton(
           child: Text(text, textAlign: TextAlign.center),
           onPressed: answerSelect,
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.purple,
-            padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-              textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica", fontSize: 20))
-            ),
+          style: ElevatedButton.styleFrom(backgroundColor: Colors.purple, padding: EdgeInsets.fromLTRB(0, 10, 0, 10), textStyle: TextStyle(color: Colors.white, fontFamily: "Helvetica", fontSize: 20))),
     );
   }
 }
